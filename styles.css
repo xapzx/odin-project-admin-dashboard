@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+}
+
+header {
+    grid-row: 1;
+    grid-column: 2 / 3;
+}
+
+.sidebar {
+    background-color: lightcyan;
+}
+
+.content {
+    background-color: gray;
+}
+
+.search-icon, .notification-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.account-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.profile-img {
+    width: 48px;
+    height: 48px;
+}
