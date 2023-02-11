@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -19,6 +20,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.account-section p {
+    margin: 0;
+}
+
 .account-btn {
     align-self: center;
 }
@@ -31,11 +36,44 @@ body {
 header {
     grid-row: 1;
     grid-column: 2;
+    padding: 12px 24px;
 }
 
 .sidebar {
-    background-color: lightcyan;
+    background-color: blueviolet;
     grid-row: 1 / -1;
+}
+
+.sidebar ul {
+    padding-left: 0;
+    padding-right: 20px;
+    margin-top: 32px;
+}
+
+.sidebar ul li {
+    list-style-type: none;
+    padding-bottom: 8px;
+}
+
+.sidebar a, .dashboard {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.dashboard, .sidebar li {
+    margin-left: 20px;
+}
+
+
+.dashboard {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    background-size: 24px 24px;
 }
 
 .content {
@@ -64,6 +102,11 @@ header {
 .card {
     border-radius: 8px;
     background-color: white;
+    padding: 24px;
+}
+
+.card p {
+    margin: 0;
 }
 
 .announcement, .trending {
@@ -71,12 +114,7 @@ header {
     grid-template-rows: auto 1fr;
 }
 
-.search-icon, .notification-icon {
-    width: 36px;
-    height: 36px;
-}
-
-.account-icon {
+.search-icon, .notification-icon, .account-icon {
     width: 36px;
     height: 36px;
 }
@@ -84,4 +122,45 @@ header {
 .profile-img {
     width: 48px;
     height: 48px;
+}
+
+/* Side-bar icons */
+.home {
+    background-image: url("images/home.svg")
+}
+
+.profile {
+    background-image: url("images/profile.svg");
+}
+
+.messages {
+    background-image: url("images/message.svg");
+}
+
+.history {
+    background-image: url("images/history.svg");
+}
+
+.tasks {
+    background-image: url("images/tasks.svg");
+}
+
+.communities {
+    background-image: url("images/community.svg");
+}
+
+.settings {
+    background-image: url("images/settings.svg");
+}
+
+.support {
+    background-image: url("images/support.svg");
+}
+
+.privacy {
+    background-image: url("images/privacy.svg");
+}
+
+.dashboard {
+    background-image: url("images/dashboard.svg");
 }
