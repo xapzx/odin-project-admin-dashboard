@@ -1,6 +1,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -41,10 +42,11 @@ header {
     grid-row: 1;
     grid-column: 2;
     padding: 12px 24px;
+    /* box-shadow: 0px 5px 20px 5px; */
 }
 
 .sidebar {
-    background-color: blueviolet;
+    background-color: #0ea5e9;
     grid-row: 1 / -1;
 }
 
@@ -80,12 +82,16 @@ header {
 }
 
 .content {
-    background-color: gray;
+    background-color: #e0f2fe;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 15px;
     gap: 15px;
+}
+
+.content > div > p {
+    font-weight: bold;
 }
 
 .content p {
