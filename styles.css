@@ -70,7 +70,6 @@ header {
     background-image: url("images/wizard.png");
     background-repeat: no-repeat;
     background-size: 60px 60px;
-    padding-right: 12px;
 }
 
 .account-section {
@@ -104,10 +103,14 @@ header {
     border: none;
 }
 
-.welcome-msg {
+.img-text-layout {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+    gap: 12px;
+}
+
+.welcome-msg {
     font-weight: bold;
     font-size: 0.8rem;
 }
@@ -174,14 +177,8 @@ header {
     background-color: #e0f2fe;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
     padding: 30px 25px 60px 25px;
     gap: 20px;
-}
-
-.content > div > p {
-    font-weight: bold;
-    font-size: 1.2rem;
 }
 
 .content p {
@@ -200,6 +197,10 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 25px;
+}
+
+.project-desc {
+    color: grey;
 }
 
 .card {
@@ -227,8 +228,18 @@ header {
     height: 18px;
 }
 
+.project {
+    border-left: 8px solid rgb(226, 165, 52);
+}
+
 .project-title {
     font-weight: bold;
+}
+
+.main-info {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 25px;
 }
 
 .announcement, .trending {
@@ -236,8 +247,75 @@ header {
     grid-template-rows: auto 1fr;
 }
 
+.announcement {
+    height: 325px;
+}
+
+.announcement-title {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.announcement-desc {
+    font-size: 0.7rem;
+    color: grey;
+}
+
+.announcement > p, .trending > p, .projects-container > p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.announcement-content:not(:last-child) {
+    border-bottom: 1px solid lightgrey;
+}
+
+.announcement-content:not(:last-child) > .announcement-desc {
+    padding-bottom: 12px;
+}
+
+.announcement-content:not(:first-child) > .announcement-title {
+    padding-top: 12px;
+}
+
 .trending {
     margin-top: 12px;
+    height: 300px;
+}
+
+.trending-card {
+    gap: 25px;
+}
+
+.trending-card p {
+    font-size: 0.8rem;
+}
+
+.trending-title {
+    color: grey;
+}
+
+.trending-img {
+    width: 45px;
+    height: 45px;
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+}
+
+.trending-1-img {
+    background-image: url("images/wizard-1.png");
+}
+
+.trending-2-img {
+    background-image: url("images/wizard-2.png");
+}
+
+.trending-3-img {
+    background-image: url("images/wizard-3.png");
+}
+
+.trending-4-img {
+    background-image: url("images/wizard-4.png");
 }
 
 /* Side-bar icons */
