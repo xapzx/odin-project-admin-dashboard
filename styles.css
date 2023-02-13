@@ -29,6 +29,7 @@ header {
 .header-top, .header-bottom {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 24px;
 }
 
 .search-icon, .notification-icon {
@@ -83,7 +84,21 @@ header {
 }
 
 .account-btn {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); */
     align-self: center;
+    justify-items: end;
+    gap: 12px;
+}
+
+.account-btn > button {
+    background-color: #0ea5e9;
+    color: white;
+    width: 100px;
+    height: 32px;
+    border-radius: 24px;
+    border: none;
 }
 
 .welcome-msg {
@@ -109,7 +124,7 @@ header {
     width: 80%;
     height: 70%;
     border: none;
-    border-radius: 12px;
+    border-radius: 24px;
     background-color: #e0f2fe;
 }
 
