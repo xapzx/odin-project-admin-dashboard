@@ -15,6 +15,16 @@ p {
     height: 100vh;
 }
 
+header {
+    grid-row: 1;
+    grid-column: 2;
+    padding: 12px 24px;
+}
+
+.header-top {
+    margin-bottom: 24px;
+}
+
 .header-top, .header-bottom {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -36,13 +46,21 @@ p {
 .welcome-msg {
     display: grid;
     grid-template-columns: auto 1fr;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
-header {
-    grid-row: 1;
-    grid-column: 2;
-    padding: 12px 24px;
-    /* box-shadow: 0px 5px 20px 5px; */
+.welcome-user-msg {
+    font-size: 1.4rem;
+}
+
+.searchbar input {
+    width: 75%;
+    height: 70%;
+    border: none;
+    border-radius: 12px;
+    background-color: #e0f2fe;
 }
 
 .sidebar {
@@ -146,13 +164,23 @@ header {
 }
 
 .search-icon, .notification-icon, .account-icon {
-    width: 36px;
-    height: 36px;
+    width: 42px;
+    height: 42px;
+}
+
+.account-icon {
+    background-image: url("images/wizard.png");
+    background-repeat: no-repeat;
+    background-size: 42px 42px;
 }
 
 .profile-img {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
+    background-image: url("images/wizard.png");
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    padding-right: 12px;
 }
 
 /* Side-bar icons */
