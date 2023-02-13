@@ -15,6 +15,7 @@ p {
     height: 100vh;
 }
 
+/* Header Section */
 header {
     grid-row: 1;
     grid-column: 2;
@@ -30,13 +31,55 @@ header {
     grid-template-columns: 3fr 1fr;
 }
 
+.search-icon, .notification-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+
+.search-icon {
+    background-color: white;
+}
+
+.account-icon {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background-image: url("images/wizard.png");
+    background-repeat: no-repeat;
+    background-size: 42px 42px;
+}
+
+.search-icon {
+    background-image: url("images/magnify.svg");
+}
+
+.notification-icon {
+    background-image: url("images/notification.svg");
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    background-image: url("images/wizard.png");
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    padding-right: 12px;
+}
+
 .account-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    justify-items: end;
+    gap: 24px;
 }
 
 .account-section p {
     margin: 0;
+    font-weight: bold;
 }
 
 .account-btn {
@@ -55,14 +98,22 @@ header {
     font-size: 1.4rem;
 }
 
+.searchbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 8px;
+}
+
 .searchbar input {
-    width: 75%;
+    width: 80%;
     height: 70%;
     border: none;
     border-radius: 12px;
     background-color: #e0f2fe;
 }
 
+/* Side bar Section */
 .sidebar {
     background-color: #0ea5e9;
     grid-row: 1 / -1;
@@ -99,6 +150,7 @@ header {
     background-size: 24px 24px;
 }
 
+/* Project Section */
 .content {
     background-color: #e0f2fe;
     display: grid;
@@ -161,26 +213,6 @@ header {
 .announcement, .trending {
     display: grid;
     grid-template-rows: auto 1fr;
-}
-
-.search-icon, .notification-icon, .account-icon {
-    width: 42px;
-    height: 42px;
-}
-
-.account-icon {
-    background-image: url("images/wizard.png");
-    background-repeat: no-repeat;
-    background-size: 42px 42px;
-}
-
-.profile-img {
-    width: 60px;
-    height: 60px;
-    background-image: url("images/wizard.png");
-    background-repeat: no-repeat;
-    background-size: 60px 60px;
-    padding-right: 12px;
 }
 
 /* Side-bar icons */
