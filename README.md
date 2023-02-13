@@ -1,6 +1,8 @@
 # odin-project-admin-dashboard
 Project: Build a full dashboard design with a focus on using CSS Grid
 
+Live Preview: https://xapzx.github.io/odin-project-admin-dashboard/
+
 This project is apart of The Odin Project Foundations Course. The aim of this project is to build a full dashboard design with a focus on using CSS Grid.
 
 Assignment Details:
